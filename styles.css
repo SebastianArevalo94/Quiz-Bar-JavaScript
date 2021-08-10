@@ -1,0 +1,16 @@
+body{
+    background-image: url(https://elmejorinmigrante.com/wp-content/uploads/2020/02/F1-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.txt-form{
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
