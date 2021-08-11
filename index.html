@@ -7,69 +7,97 @@
 
     <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
 
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css" />
-
     <title>Bar</title>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+
   </head>
   <body>
-    <section style="display: flex; justify-content: center;">
-      <div
-        style="
-          margin: 80px;
-          width: fit-content;
-          background-color: white;
-          border-radius: 5px;
-          padding: 20px;
-        "
-      >
-        <form
-        >
-          <div style="text-align: center; padding: 10px"><h2>Carnet</h2></div>
-          <div class="mb-3">
-            <label for="names" class="form-label txt-form">Nombres:</label>
-            <input type="text" class="form-control" id="names" />
-          </div>
 
-          <div class="mb-3">
-            <label for="surNames" class="form-label txt-form">Apellidos:</label>
-            <input type="text" class="form-control" id="surNames" />
-          </div>
+    <!-- <div class="container"> -->
 
-          <div class="mb-3">
-            <label for="age" class="form-label txt-form">Edad:</label>
-            <input type="number" class="form-control" id="age" />
-          </div>
+    <section>
+        <div>
+            <form class="formulario rounded bg-dark bg-gradient ">
+                <div class="items fw-bold">
+                <div>
+                    <h3 class="p-3">Generar Carnet</h3>
+                </div>
+              <div class="mb-3">
+                <label for="names" class="form-label"
+                  >Nombres:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="names"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="lastNames class="form-label">Apellidos:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastNames"
+                />
+              </div>
 
-          <div class="mb-3">
-            <label for="bloodType" class="form-label txt-form"
-              >Tipo de Sangre:</label
-            >
-            <input type="text" class="form-control" id="bloodType" />
-          </div>
+              <div class="mb-3">
+                <label for="age" class="form-label">Edad:</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="age"
+                />
+              </div>
 
-          <div class="mb-3">
-            <label for="telephone" class="form-label txt-form">Teléfono:</label>
-            <input type="text" class="form-control" id="telephone" />
+              <div class="mb-3">
+                <label for="bloodType" class="form-label">Tipo de Sangre:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="bloodType"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="bloodType" class="form-label">Teléfono:</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="telephone"
+                />
+              </div>
+              <div class="button-container">
+                <button type="button" class="btn btn-success btn1" onclick="getData()">Generar</button>
+                <button type="button" class="btn btn-danger btn2" onclick="clear()">Limpiar</button>
+              </div>
+              </div>  
+              </form>            
           </div>
-          <div style="display: flex; justify-content: center">
-            <button type="button" class="btn btn-primary" onclick="datos()">
-              Generar
-            </button>
-          </div>
-        </form>
-      </div>
     </section>
 
+    <section>
+        <div class="cards-container">
+            <h2 class="card bg-dark bg-gradient" id="card"></h2>
+        </div>
+    </section>
+
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
   </body>

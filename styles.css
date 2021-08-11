@@ -1,16 +1,71 @@
-body{
-    background-image: url(https://elmejorinmigrante.com/wp-content/uploads/2020/02/F1-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+body {
+  background-image: url(https://elmejorinmigrante.com/wp-content/uploads/2020/02/F1-2.jpg);
+  background-repeat: repeat-y;
+  /*background-size: cover;*/
 }
 
-.txt-form{
-    font-family: monospace;
-    font-size: 25px;
+.formulario {
+ 
+  color: black;
+  padding: 25px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: fit-content;
+  margin: 50px;
 }
 
-.button{
+.cards-container {
+  /*background-color: greenyellow;*/
+  padding: 25px;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  
+}
+/*
+.container {
+  display: flex;
+  flex-direction: row;
+}
+*/
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+  width: fit-content;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.btn1 {
+  margin: 15px;
+  width: fit-content;
+  
+}
+
+.btn2 {
+  margin: 15px;
+  width: fit-content;
+  
+}
+
+.card-info{
+    padding: 5px;
+}
+
+.items{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
 }
